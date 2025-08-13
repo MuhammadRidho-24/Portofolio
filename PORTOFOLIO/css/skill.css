@@ -1,0 +1,117 @@
+   body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #1a1a1a;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+    }
+
+    nav a.active {
+      border-bottom: 2px solid #4a7dff;
+      padding-bottom: 4px;
+    }
+
+    .skills-section {
+      padding: 60px 40px;
+    }
+
+    .skills-section h2 {
+      color: #4a7dff;
+      font-size: 28px;
+      margin-bottom: 40px;
+      border-bottom: 3px solid #4a7dff;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .skills-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .skills-left {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .skills-left h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .skills-left p {
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .skill {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .skill-label {
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .skill-bar {
+      height: 6px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .skill-bar-fill {
+      height: 100%;
+      background-color: #4a7dff;
+      width: 0%;
+      transition: width 1s ease-in-out;
+    }
+
+    .skills-right {
+      flex: 1;
+    }
+
+    .skills-right img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .skills-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .skills-left, .skills-right {
+        max-width: 100%;
+      }
+
+      .skill-label {
+        justify-content: center;
+        gap: 10px;
+      }
+    }

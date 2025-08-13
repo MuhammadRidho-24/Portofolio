@@ -1,0 +1,83 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #1a1a1a;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+    }
+
+    nav a.active {
+      border-bottom: 2px solid #4a7dff;
+      padding-bottom: 4px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 40px;
+    }
+
+    .text-section {
+      flex: 1;
+    }
+
+    .text-section h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .text-section h1 span {
+      color: #4a7dff;
+    }
+
+    .text-section p {
+      font-size: 20px;
+      color: #444;
+    }
+
+    .text-section .contact-button {
+      margin-top: 30px;
+      padding: 10px 24px;
+      background-color: #4a7dff;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      font-size: 18px;
+    }
+
+    .image-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .image-section img {
+      width: 300px;
+      height: auto;
+      border-radius: 50%;
+      background-color: #4a7dff;
+      padding: 20px;
+    }
